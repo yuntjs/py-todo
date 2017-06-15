@@ -6,3 +6,4 @@ class TodoItemSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = TodoItem
         field = ('url', 'title', 'completed', 'order')
+        fields = '__all__'
